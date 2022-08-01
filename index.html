@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="h-screen grid place-items-center bg-cream">
+    <div class="container max-w-sm flex flex-col gap-4 lg:max-w-lg">
+      <div
+        class="p-6 flex justify-between items-center text-white rounded-lg bg-softRed"
+      >
+        <div>
+          <p class="text-base">My balance</p>
+          <p class="text-2xl font-bold">$921.48</p>
+        </div>
+        <div>
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="px-6 py-7 rounded-lg bg-white">
+        <p class="spending | font-semibold">Spending - Last 7 days</p>
+        <div
+          class="graph-container | mb-6 min-h-[225px] grid grid-cols-7 items-end gap-2 text-center border-b-2 lg:min-h-[250px]"
+        >
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">mon</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">tue</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">wed</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">thu</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">fri</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">sat</p>
+          </div>
+          <div class="graph-container flex flex-col">
+            <div
+              class="graph | w-[80%] h-2 mx-auto order-2 rounded-md transition-all bg-softRed hover:opacity-80"
+            ></div>
+            <p
+              class="hover | hidden mb-2 p-2 order-1 text-sm rounded-lg text-white bg-darkBrown lg:block lg:translate-y-2 lg:opacity-0 lg:transition-all"
+            ></p>
+            <p class="day | mt-2 order-3 text-mediumBrown">sun</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-end">
+          <div>
+            <p class="text-lg text-mediumBrown">Total this month</p>
+            <p class="text-4xl font-bold">$478.33</p>
+          </div>
+          <div class="text-right">
+            <p class="-mb-1 text-xl font-semibold">+2.4%</p>
+            <p class="text-base text-mediumBrown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Naithcots">naithcots</a>.
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
