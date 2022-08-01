@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spending {
+  font-size: clamp(1.35rem, 4vw, 1.65rem);
+}
+
+.cyan {
+  background-color: hsl(186, 34%, 60%);
+}
+
+@media (min-width: 1024px) {
+  .graph:hover + .hover {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
